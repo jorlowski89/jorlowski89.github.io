@@ -12,7 +12,7 @@ function task1() {
         console.log(`${value1Conv} - liczba nieparzysta`);
     }
 }
-// task1()
+task1()
 
 
 // ------------------------------
@@ -34,7 +34,7 @@ function task2() {
         alert(`Liczba ${value2Conv} nie mieści się w żadnym przedziale`);
     }
 }
-// task2();
+task2();
 
 
 // ------------------------------
@@ -66,7 +66,7 @@ function task3() {
             break;
     }
 }
-// task3();
+task3();
 
 
 // Upewnijcie się, czy pobrana wartość jest na pewno liczbą (z użyciem metody typeof). Jeżeli nie
