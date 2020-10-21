@@ -12,10 +12,9 @@ function task1() {
         console.log(`${value1Conv} - liczba nieparzysta`);
     }
 }
-task1()
+// task1()
 
 
-// ------------------------------
 // Zadanie 2
 // Pobierz liczbę z użyciem metody prompt (lub wpisz ją jako stałą, jeżeli użycie
 // metody prompt sprawia Ci trudność) i sprawdź, czy mieści się w przedziale <-
@@ -34,10 +33,9 @@ function task2() {
         alert(`Liczba ${value2Conv} nie mieści się w żadnym przedziale`);
     }
 }
-task2();
+// task2();
 
 
-// ------------------------------
 // Zadanie 3
 // Pobierz liczbę z użyciem metody prompt i za pomocą instrukcji warunkowej switch wyświetl w konsoli komunikat:
 //     • „1” - zdałeś egzamin,
@@ -66,8 +64,55 @@ function task3() {
             break;
     }
 }
-task3();
+// task3();
 
 
 // Upewnijcie się, czy pobrana wartość jest na pewno liczbą (z użyciem metody typeof). Jeżeli nie
 // jest, proszę przekonwertować ją na liczbę (parseInt oraz parseFloat)
+
+
+// Zadanie 4
+// Napisz funkcję, która zwraca słowo something połączony ze spacją „ ”.
+function task4(word) {
+    console.log(`Something ${word}`);
+}
+
+// task4("In The Way");
+
+
+// Zadanie 5
+// Stwórz funkcję obliczającą liczbę wygranych, remisów i przegranych oraz obliczającą liczbę
+// punktów, które drużyna piłkarska uzyskała do tej pory.
+// • wygrane otrzymują 3 punkty
+// • remisy otrzymują 1 punkt
+// • porazki dają 0 punktów
+const winPoints = 3;
+const drawPoints = 1;
+const loosePoints = 0;
+
+function task5(wins, draw, looses) {
+    const score = (wins * winPoints) + (draw * drawPoints) + (looses * loosePoints)
+    console.log(score);
+}
+
+// task5(5, 6, 2);
+
+
+// Zadanie 5
+// Farmer prosi cię, abyś powiedział mu, ile nóg można policzyć wśród wszystkich jego zwierząt.
+// Rolnik hoduje trzy gatunki:
+// • kurczaki = 2 nogi
+// • krowa = 4 nogi
+// • świnie = 4 nogi
+// Rolnik policzył swoje zwierzęta i podaje sumę częściową dla każdego gatunku. 
+//Musisz zaimplementować funkcję, która zwraca całkowitą liczbę nóg wszystkich zwierząt.
+
+function task6(chickens, cows, pigs) {
+    const chickensLegs = 2;
+    const cowsLegs = 4;
+    const pigsLegs = 4;
+    const animalsLegs = (chickens * chickensLegs) + (cows * cowsLegs) + (pigs * pigsLegs)
+    console.log(animalsLegs);
+}
+
+// task6(21, 6, 8);
